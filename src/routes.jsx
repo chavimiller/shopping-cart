@@ -1,4 +1,7 @@
 import App from "./App";
+import HomePage from "./components/HomePage";
+import Shop from "./components/Shop";
+import Cart from "./components/Cart";
 
 const routes = [
   {
@@ -7,15 +10,15 @@ const routes = [
     children: [
       {
         index: true,
-        element: null,
+        element: <HomePage />,
       },
       {
         path: "/shop",
-        element: null,
+        element: <Shop />,
       },
       {
         path: "/cart",
-        element: null,
+        element: <Cart />,
       },
     ],
   },

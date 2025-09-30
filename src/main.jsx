@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import routes from "./routes.jsx";
+import "./App.css";
 import "./fonts/Montserrat-Italics.ttf";
 import "./fonts/Montserrat.ttf";
 import "./fonts/YanoneKaffeesatz.ttf";

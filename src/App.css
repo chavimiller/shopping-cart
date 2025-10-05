@@ -59,3 +59,22 @@ img {
   padding: 3rem;
   width: 600px;
 }
+
+
+.card-grid {
+  padding: 7rem 0;
+  display: grid;
+  justify-content: space-between;
+  align-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 60px;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  background-color: var(--secondary);
+  justify-self: center;
+  width: 300px;
+  height: 400px;
+  border-radius: 1rem;
+}

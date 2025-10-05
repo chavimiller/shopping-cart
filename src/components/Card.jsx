@@ -5,7 +5,7 @@ import Button from "./Button";
 const Card = () => {
   const { data: products, loading, error } = useProducts();
 
-  if (loading) return <div>loading...</div>;
+  if (loading) return <div className="loading">loading...</div>;
 
   if (error) return <div>{error.message}</div>;
 
@@ -17,7 +17,7 @@ const Card = () => {
           <div className="product-name">{products[0].name}</div>
           <div className="product-price">${products[0].price}</div>
         </div>
-        <Button />
+        <Button type={"addToCart"} />
       </div>
     </>
   );

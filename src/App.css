@@ -55,6 +55,45 @@ nav svg {
   top: 2rem;
 }
 
+.loading {
+  font-family: "Montserrat";
+  color: var(--primary-dark);
+}
+
+.add-to-cart {
+  background-color: var(--accent);
+  color: var(--secondary);
+  border: none ;
+  border-radius: .8rem;
+  padding: .5rem .8rem;
+  margin: .8rem;
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.amount-btn button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.amount-btn {
+  display: flex;
+  padding: .2rem .3rem;
+  margin: .8rem 0;
+  border-radius: .5rem;
+  align-items: center;
+  gap: .5rem;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--secondary);
+  background-color: var(--accent);
+ 
+} 
 
 .coffee-beans-img {
   padding: 3rem;
@@ -86,13 +125,13 @@ nav svg {
 .card img {
   width: 250px;
   height: auto;
-  padding: 1.5rem;
+  padding: 1.3rem;
 }
 
 .product-info {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 4px;
 }
 
 .product-name {
@@ -103,7 +142,7 @@ nav svg {
 }
 
 .product-price {
-  color: var(--primary-dark);
+  color: var(--primary-light);
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 400;
 }

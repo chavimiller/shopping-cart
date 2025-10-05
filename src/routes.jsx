@@ -1,7 +1,7 @@
 import App from "./App";
 import HomePage from "./components/HomePage";
 import Shop from "./components/Shop";
-import Cart from "./components/Cart";
+import CartPage from "./components/CartPage";
 
 const routes = [
   {
@@ -18,7 +18,7 @@ const routes = [
       },
       {
         path: "/cart",
-        element: <Cart />,
+        element: <CartPage />,
       },
     ],
   },

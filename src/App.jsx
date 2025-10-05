@@ -4,9 +4,11 @@ import NavBar from "./components/NavBar";
 import { Outlet } from "react-router";
 
 function App() {
+  const [cart, setCart] = useState([]);
+
   return (
     <>
-      <NavBar />
+      <NavBar cart={cart} />
       <Outlet />
     </>
   );

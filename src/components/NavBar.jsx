@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 
-const NavBar = () => {
+const NavBar = ({ cart }) => {
   return (
     <>
       <nav>

@@ -1,6 +1,6 @@
-import React from "react";
+import { useEffect, useState } from "react";
 
-async function fetchProducts() {
+const useProducts = () => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -24,6 +24,8 @@ async function fetchProducts() {
     };
     fetchData();
   }, []);
-}
 
-export default fetchProducts();
+  return { data, loading, error };
+};
+
+export default useProducts;

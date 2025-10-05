@@ -60,21 +60,29 @@ img {
   width: 600px;
 }
 
-
 .card-grid {
   padding: 7rem 0;
   display: grid;
   justify-content: space-between;
   align-content: center;
   grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 60px;
+  row-gap: 100px;
+}
+
+.card > img {
+  width: 180px;
+  height: auto;
 }
 
 .card {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
   background-color: var(--secondary);
   justify-self: center;
-  width: 300px;
-  height: 400px;
-  border-radius: 1rem;
+  min-width: 300px;
+  min-height: 430px;
+  border-radius: 9rem;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat";
+  align-items: center;
 }

@@ -8,7 +8,9 @@ const useProducts = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("https://fake-coffee-api.vercel.app/api");
+        const response = await fetch(
+          "https://fake-coffee-brand-api.vercel.app/api"
+        );
         if (!response.ok) {
           throw new Error(`HTTP error: Status ${response.status}`);
         }

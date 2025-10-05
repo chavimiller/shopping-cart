@@ -55,7 +55,8 @@ nav svg {
   top: 2rem;
 }
 
-img {
+
+.coffee-beans-img {
   padding: 3rem;
   width: 600px;
 }
@@ -69,20 +70,40 @@ img {
   row-gap: 100px;
 }
 
-.card > img {
-  width: 180px;
-  height: auto;
-}
-
 .card {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
   background-color: var(--secondary);
   justify-self: center;
   min-width: 300px;
-  min-height: 430px;
-  border-radius: 9rem;
+  min-height: 440px;
+  border-radius: 7rem;
   display: flex;
   flex-direction: column;
   font-family: "Montserrat";
   align-items: center;
+}
+
+.card img {
+  width: 250px;
+  height: auto;
+  padding: 1.5rem;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.product-name {
+  font-family: "Yanone";
+  color: var(--primary-light);
+  font-weight: 500;
+  font-size: 35px;
+}
+
+.product-price {
+  color: var(--primary-dark);
+  font-size: 22px;
+  font-weight: 500;
 }

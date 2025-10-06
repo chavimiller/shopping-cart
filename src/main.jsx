@@ -7,6 +7,8 @@ import "./fonts/Montserrat-Italics.ttf";
 import "./fonts/Montserrat.ttf";
 import "./fonts/YanoneKaffeesatz.ttf";
 
+
+
 const router = createBrowserRouter(routes);
 
 createRoot(document.getElementById("root")).render(

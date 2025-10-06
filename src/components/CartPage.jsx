@@ -1,4 +1,8 @@
-const Cart = () => {
+import { useCart } from "../hooks/CartContext";
+
+const CartPage = () => {
+  const { cart, setCart } = useCart();
+
   return (
     <>
       <div className="cart-container"></div>
@@ -6,4 +10,4 @@ const Cart = () => {
   );
 };
 
-export default Cart;
+export default CartPage;

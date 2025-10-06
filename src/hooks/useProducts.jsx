@@ -1,12 +1,20 @@
 import { useEffect, useState } from "react";
+import { mockProducts } from "../data/products";
 
 const useProducts = () => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  // const [error, setError] = useState(null);    commented out due to original API not working
 
+  // Mocking API fetch - original API down
   useEffect(() => {
-    const fetchData = async () => {
+    const timer = setTimeout(() => {
+      setData(mockProducts);
+      setLoading(false);
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, []);
+  /* const fetchData = async () => {
       try {
         const response = await fetch(
           "https://fake-coffee-brand-api.vercel.app/api"
@@ -25,9 +33,9 @@ const useProducts = () => {
       }
     };
     fetchData();
-  }, []);
+  }, []); 
 
-  return { data, loading, error };
+  return { data, loading, error }; */
 };
 
 export default useProducts;

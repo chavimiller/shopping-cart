@@ -73,6 +73,21 @@ nav svg {
   font-size: 20px;
 }
 
+.cart-number {
+  color: var(--accent);
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  width: 25px;
+  height: 25px;
+  border-radius: 14px;
+  background-color: var(--primary-light);
+  position: absolute;
+  right: 4.4rem;
+  top: 1.6rem;
+  z-index: 1;
+}
+
 .amount-btn button {
   background-color: transparent;
   border: none;
@@ -123,7 +138,7 @@ nav svg {
 }
 
 .card img {
-  width: 250px;
+  max-width: 180px;
   height: auto;
   padding: 1.3rem;
 }

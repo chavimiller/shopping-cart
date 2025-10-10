@@ -6,8 +6,8 @@ import { CartProvider } from "./hooks/CartContext.jsx";
 function App() {
   return (
     <>
-      <NavBar />
       <CartProvider>
+        <NavBar />
         <Outlet />
       </CartProvider>
     </>

@@ -33,9 +33,9 @@ const useProducts = () => {
       }
     };
     fetchData();
-  }, []); 
+  }, []); */
 
-  return { data, loading, error }; */
+  return { data, loading };
 };
 
 export default useProducts;

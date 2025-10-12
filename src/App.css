@@ -124,6 +124,16 @@ nav svg {
   row-gap: 100px;
 }
 
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+  font-size: 30px;
+  color: var(--secondary);
+  padding: 80px;
+}
+
 .card {
   box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
   background-color: var(--secondary);

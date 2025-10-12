@@ -1,18 +1,6 @@
 import { useState } from "react";
 
-const Button = ({ type, onClick }) => {
-  const [amount, setAmount] = useState(0);
-  if (amount < 0) {
-    setAmount(0);
-  }
-  const increment = () => {
-    setAmount(amount + 1);
-  };
-
-  const decrement = () => {
-    setAmount(amount - 1);
-  };
-
+const Button = ({ type, onClick, quantity = 0, onIncrement, onDecrement }) => {
   if (type === "addToCart")
     return (
       <button className="add-to-cart" onClick={onClick}>
@@ -22,7 +10,7 @@ const Button = ({ type, onClick }) => {
   if (type === "increment")
     return (
       <div className="amount-btn">
-        <button onClick={decrement}>
+        <button onClick={onDecrement}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="24px"
@@ -33,8 +21,8 @@ const Button = ({ type, onClick }) => {
             <path d="M180.78-427v-106h598.44v106H180.78Z" />
           </svg>
         </button>
-        <div>{amount}</div>
-        <button onClick={increment}>
+        <div>{quantity}</div>
+        <button onClick={onIncrement}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="24px"

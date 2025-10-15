@@ -9,24 +9,9 @@ const HomePage = () => {
   const { data } = useProducts();
   const navigate = useNavigate();
 
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 600);
-    return () => clearTimeout(timer);
-  }, []);
-
   const handleShopClick = () => {
     navigate("/shop");
   };
-
-  if (loading) {
-    return (
-      <>
-        <div className="loading">Loading...</div>
-      </>
-    );
-  }
 
   return (
     <>

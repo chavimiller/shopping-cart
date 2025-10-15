@@ -14,7 +14,6 @@ const Card = ({ id, image, name, price, type, quantity }) => {
     } else {
       setCart([...cart, { id, image, name, price, quantity: 1 }]);
     }
-    console.log(cart);
   }
 
   function removeFromCart() {
@@ -29,7 +28,13 @@ const Card = ({ id, image, name, price, type, quantity }) => {
         setCart(updatedCart);
       }
     }
-    console.log(cart);
+  }
+
+  function deleteItem() {
+    const existingItem = cart.find((item) => item.id === id);
+    if (existingItem) {
+      setCart(cart.filter((item) => item.id !== id));
+    }
   }
 
   if (type === "cartCard")
@@ -44,12 +49,15 @@ const Card = ({ id, image, name, price, type, quantity }) => {
             </div>
             <div className="quantity-cart">{quantity}</div>
           </div>
-          <Button
-            quantity={quantity}
-            type={"increment"}
-            onIncrement={addToCart}
-            onDecrement={removeFromCart}
-          />
+          <div className="checkout-buttons">
+            <Button
+              quantity={quantity}
+              type={"increment"}
+              onIncrement={addToCart}
+              onDecrement={removeFromCart}
+            />
+            <Button type={"delete"} onClick={deleteItem} />
+          </div>
         </div>
       </>
     );

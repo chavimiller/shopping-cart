@@ -44,7 +44,7 @@ export const mockProducts = [
     imageUrl: beansBag6,
   },
   {
-    id: 6,
+    id: 7,
     name: "Coconut Flavored Cold Brew",
     price: 27.99,
     imageUrl: beansBag7,

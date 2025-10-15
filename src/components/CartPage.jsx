@@ -1,13 +1,21 @@
 import { useCart } from "../hooks/CartContext";
 import Card from "./Card";
+import Button from "./Button";
+import { useNavigate } from "react-router";
 
 const CartPage = () => {
   const { cart, setCart } = useCart();
+  const navigate = useNavigate();
+
+  const handleShopClick = () => {
+    navigate("/shop");
+  };
   if (cart.length === 0)
     return (
       <>
         <div className="empty-cart container section">
-          Looks like your cart is empty! Check out our coffee and tea selection
+          <div>Looks like your cart is empty! </div>
+          <Button type={"general"} text="Shop Now" onClick={handleShopClick} />
         </div>
       </>
     );
@@ -20,6 +28,7 @@ const CartPage = () => {
               <Card
                 type={"cartCard"}
                 id={product.id}
+                key={product.id}
                 image={product.image}
                 name={product.name}
                 price={product.price}

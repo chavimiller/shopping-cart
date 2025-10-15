@@ -14,6 +14,7 @@ const Shop = () => {
             data.map((product) => (
               <Card
                 id={product.id}
+                key={product.id}
                 image={product.imageUrl}
                 name={product.name}
                 price={product.price}

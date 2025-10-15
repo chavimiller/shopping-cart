@@ -3,10 +3,16 @@ import coffeeBeans from "../assets/images/coffeeBeans.png";
 import Button from "./Button";
 import Card from "./Card";
 import useProducts from "../hooks/useProducts";
+import { useNavigate } from "react-router";
 
 const HomePage = () => {
   const { data } = useProducts();
-  console.log(data);
+  const navigate = useNavigate();
+
+  const handleShopClick = () => {
+    navigate("/shop");
+  };
+
   return (
     <>
       <img
@@ -24,7 +30,7 @@ const HomePage = () => {
         <div className="hero-text">
           From mountain farms to your cup — discover the journey of our beans.
         </div>
-        <Button type={"general"} text={"Shop Now"} />
+        <Button type={"general"} text={"Shop Now"} onClick={handleShopClick} />
       </div>
 
       <div className="featured-container section">

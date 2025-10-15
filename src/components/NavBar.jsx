@@ -4,7 +4,6 @@ import { useCart } from "../hooks/CartContext";
 const NavBar = () => {
   const { cart } = useCart();
   const cartTotal = cart.reduce((total, item) => total + item.quantity, 0);
-
   return (
     <>
       <nav className="section">

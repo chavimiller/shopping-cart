@@ -9,8 +9,8 @@ import beansBag7 from "../assets/images/beansBag7.png";
 export const mockProducts = [
   {
     id: 1,
-    name: "Espresso Blend",
-    price: 22.0,
+    name: "Fancy Mouse Espresso Blend",
+    price: 22.99,
     imageUrl: beansBag1,
   },
   {
@@ -34,7 +34,7 @@ export const mockProducts = [
   {
     id: 5,
     name: "Careless Cat Half-Calf Blend",
-    price: 22.0,
+    price: 22.99,
     imageUrl: beansBag5,
   },
   {

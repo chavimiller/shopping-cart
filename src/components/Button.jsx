@@ -1,10 +1,17 @@
 import { useState } from "react";
 
-const Button = ({ type, onClick, quantity = 0, onIncrement, onDecrement }) => {
-  if (type === "addToCart")
+const Button = ({
+  type,
+  onClick,
+  quantity = 0,
+  onIncrement,
+  onDecrement,
+  text,
+}) => {
+  if (type === "general")
     return (
-      <button className="add-to-cart" onClick={onClick}>
-        Add to Cart
+      <button className="add-to-cart" onClick={onClick} text={text}>
+        {text}
       </button>
     );
   if (type === "increment")

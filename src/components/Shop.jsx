@@ -8,16 +8,18 @@ const Shop = () => {
   if (loading) return <div className="loading">Loading...</div>;
   return (
     <>
-      <div className="card-grid">
-        {data &&
-          data.map((product) => (
-            <Card
-              id={product.id}
-              image={product.imageUrl}
-              name={product.name}
-              price={product.price}
-            />
-          ))}
+      <div className="container">
+        <div className="card-grid">
+          {data &&
+            data.map((product) => (
+              <Card
+                id={product.id}
+                image={product.imageUrl}
+                name={product.name}
+                price={product.price}
+              />
+            ))}
+        </div>
       </div>
     </>
   );

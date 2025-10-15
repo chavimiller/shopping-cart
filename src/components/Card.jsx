@@ -40,7 +40,7 @@ const Card = ({ id, image, name, price, type, quantity }) => {
           <div className="product-info-cart">
             <div className="product-name-cart">{name}</div>
             <div className="product-price-cart">
-              {Math.round(price * quantity * 100) / 100}
+              ${Math.round(price * quantity * 100) / 100}
             </div>
             <div className="quantity-cart">{quantity}</div>
           </div>
@@ -60,9 +60,9 @@ const Card = ({ id, image, name, price, type, quantity }) => {
         <img src={image} alt="Coffee image"></img>
         <div className="product-info">
           <div className="product-name">{name}</div>
-          <div className="product-price">{price}</div>
+          <div className="product-price">${price}</div>
         </div>
-        <Button type={"addToCart"} onClick={addToCart} />
+        <Button type={"general"} onClick={addToCart} text={"Add to cart"} />
       </div>
     </>
   );

@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
 import coffeeBeans from "../assets/images/coffeeBeans.png";
 import Button from "./Button";
-import Card from "./Card";
 import useProducts from "../hooks/useProducts";
 import { useNavigate } from "react-router";
+import styles from "./HomePage.module.css";
 
 const HomePage = () => {
   const { data } = useProducts();
@@ -15,20 +14,20 @@ const HomePage = () => {
 
   return (
     <>
-      <div className="hero-section">
+      <div className={styles.heroSection}>
         <img
           src={coffeeBeans}
           alt="Coffee Beans"
-          className="coffee-beans-img-2"
+          className={styles.coffeeBeansImg2}
         />
         <img
           src={coffeeBeans}
           alt="Coffee Beans"
-          className="coffee-beans-img-1"
+          className={styles.coffeeBeansImg1}
         />
         <div className="container section">
-          <div className="shop-title">Northwind Coffee Co.</div>
-          <div className="hero-text">
+          <div className={styles.shopTitle}>Northwind Coffee Co.</div>
+          <div className={styles.heroText}>
             From mountain farms to your cup — discover the journey of our beans.
           </div>
           <Button
@@ -37,12 +36,12 @@ const HomePage = () => {
             onClick={handleShopClick}
           />
         </div>
-        <div className="featured-container section">
-          <div className="featured-product">
-            <div className="month-featured-title">
+        <div className={`${styles.featuredContainer} section`}>
+          <div className={styles.featuredProduct}>
+            <div className={styles.monthFeaturedTitle}>
               This month's featured blend
             </div>
-            <div className="product-bg">
+            <div className={styles.productBg}>
               {data && data.length > 1 && (
                 <>
                   <img src={data[1].imageUrl} alt="Coffee Beans"></img>

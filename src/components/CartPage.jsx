@@ -2,6 +2,7 @@ import { useCart } from "../hooks/CartContext";
 import Card from "./Card";
 import Button from "./Button";
 import { useNavigate } from "react-router";
+import styles from "./CartPage.module.css";
 
 const CartPage = () => {
   const { cart, setCart } = useCart();
@@ -13,7 +14,7 @@ const CartPage = () => {
   if (cart.length === 0)
     return (
       <>
-        <div className="empty-cart container section">
+        <div className={`${styles.emptyCart} container section`}>
           <div>Looks like your cart is empty! </div>
           <Button type={"general"} text="Shop Now" onClick={handleShopClick} />
         </div>
@@ -22,7 +23,7 @@ const CartPage = () => {
   return (
     <>
       <div className="container section">
-        <div className="cart-grid">
+        <div className={styles.cartGrid}>
           {cart &&
             cart.map((product) => (
               <Card
@@ -36,7 +37,7 @@ const CartPage = () => {
               />
             ))}
         </div>
-        <div className="total">
+        <div className={styles.total}>
           Total: $
           {cart
             .reduce((acc, product) => acc + product.price * product.quantity, 0)

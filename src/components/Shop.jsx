@@ -5,6 +5,7 @@ import useProducts from "../hooks/useProducts";
 const Shop = () => {
   const { data, loading } = useProducts();
   const { cart, setCart } = useCart();
+
   if (loading) return <div className="loading">Loading...</div>;
   return (
     <>

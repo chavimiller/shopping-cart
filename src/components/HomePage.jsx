@@ -15,37 +15,42 @@ const HomePage = () => {
 
   return (
     <>
-      <img
-        src={coffeeBeans}
-        alt="Coffee Beans"
-        className="coffee-beans-img-2"
-      />
-      <img
-        src={coffeeBeans}
-        alt="Coffee Beans"
-        className="coffee-beans-img-1"
-      />
-      <div className="hero-section container section">
-        <div className="shop-title">Northwind Coffee Co.</div>
-        <div className="hero-text">
-          From mountain farms to your cup — discover the journey of our beans.
-        </div>
-        <Button type={"general"} text={"Shop Now"} onClick={handleShopClick} />
-      </div>
-
-      <div className="featured-container section">
-        <div className="featured-product">
-          <div className="month-featured-title">
-            This month's featured blend
+      <div className="hero-section">
+        <img
+          src={coffeeBeans}
+          alt="Coffee Beans"
+          className="coffee-beans-img-2"
+        />
+        <img
+          src={coffeeBeans}
+          alt="Coffee Beans"
+          className="coffee-beans-img-1"
+        />
+        <div className="container section">
+          <div className="shop-title">Northwind Coffee Co.</div>
+          <div className="hero-text">
+            From mountain farms to your cup — discover the journey of our beans.
           </div>
-
-          {data && data.length > 1 && (
-            <div className="product-bg">
-              <img src={data[1].imageUrl} alt="Coffee Beans"></img>
-              <div>{data[1].name}</div>
-              <div>{data[1].price}</div>
+          <Button
+            type={"general"}
+            text={"Shop Now"}
+            onClick={handleShopClick}
+          />
+        </div>
+        <div className="featured-container section">
+          <div className="featured-product">
+            <div className="month-featured-title">
+              This month's featured blend
             </div>
-          )}
+
+            {data && data.length > 1 && (
+              <div className="product-bg">
+                <img src={data[1].imageUrl} alt="Coffee Beans"></img>
+                <div>{data[1].name}</div>
+                <div>{data[1].price}</div>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </>

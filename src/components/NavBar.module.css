@@ -1,0 +1,38 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav > div {
+  font-family: "Montserrat";
+  display: flex;
+  gap: 2.5rem;
+  font-size: 25px;
+  color: var(--secondary);
+}
+
+nav svg {
+  position: absolute;
+  right: 5rem;
+  top: 2rem;
+}
+
+.cartNumber {
+  color: var(--primary-dark);
+  font-size: 18px;
+  font-weight: 500;
+  width: 25px;
+  height: 25px;
+  border-radius: 14px;
+  background-color: var(--primary-light);
+  position: absolute;
+  right: 3.7rem;
+  top: 1.1rem;
+  padding: .3rem;
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

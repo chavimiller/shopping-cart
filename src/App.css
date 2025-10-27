@@ -42,32 +42,12 @@ a {
   color: inherit;        
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 button {
   background-color: transparent;
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-nav > div {
-  font-family: "Montserrat";
-  display: flex;
-  gap: 2.5rem;
-  font-size: 25px;
-  color: var(--secondary);
-}
-
-nav svg {
-  position: absolute;
-  right: 5rem;
-  top: 2rem;
 }
 
 .container {
@@ -78,11 +58,6 @@ nav svg {
 
 .section {
   padding: 2rem 0;
-}
-
-.loading {
-  font-family: "Montserrat";
-  color: var(--primary-dark);
 }
 
 .general-button {
@@ -110,24 +85,6 @@ nav svg {
 .general-button:active {
   transform: scale(1);
 }
-.cart-number {
-  color: var(--primary-dark);
-  font-size: 18px;
-  font-weight: 500;
-  width: 25px;
-  height: 25px;
-  border-radius: 14px;
-  background-color: var(--primary-light);
-  position: absolute;
-  right: 3.7rem;
-  top: 1.1rem;
-  padding: .3rem;
-  z-index: 1;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .amount-btn {
   width: 7rem;
@@ -152,127 +109,6 @@ nav svg {
 .amount-btn button:hover {
   transform: scale(1.2);
 }
-
-.card-grid {
-  padding: 7rem 0;
-  display: grid;
-  justify-content: space-between;
-  align-content: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 100px;
-}
-
-
-
-.loading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Montserrat";
-  font-size: 30px;
-  color: var(--secondary);
-  padding: 80px;
-}
-
-
-
-.hero-section {
-  overflow-x: hidden;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.shop-title {
-  font-family: "Yanone";
-  padding: 2rem 0 0 0;
-  font-size: 170px;
-  color: var(--primary-dark);
-  font-weight: 700;
-  position: relative;
-  display: flex;
-  align-items: center;
-  z-index: 1;
-}
-
-.coffee-beans-img-1 {
-  width: 750px;
-  top: 2rem;
-  right: 79%;
-  z-index: 10;
-  position: absolute;
-  transform: rotate(-78deg);
-}
-
-.hero-section .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.coffee-beans-img-2 {
-  width: 750px;
-  top: 12rem;
-  left: 74%;
-  z-index: 10;
-  position: absolute;
-  transform: rotate(40deg);
-}
-
-.hero-text {
-  font-family: "Montserrat";
-  font-size: 20px;
-  color: var(--primary-dark);
-  padding: 2rem 0;
-  text-align: center;
-}
-
-.featured-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--primary-dark);
-  margin: 8rem 0 0 0;
-  width: 100vw;
-}
-
-.featured-product img {
-  width: 250px;
-}
-
-.product-bg {
-  background-color: var(--primary-light);
-  width: 250px;
-  height: 500px;
-  padding: 3rem 4rem;
-  border-radius: 12rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.featured-product {
-  display: flex;
-  gap: 4rem;
-  font-family: "Yanone";
-  font-weight: 500;
-  font-size: 30px;
-  color: var(--primary-dark);
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.month-featured-title {
-  color: var(--accent);
-  font-size: 160px;
-  width: 410px;
-  text-align: start;
-}
-
 
 /* check where these go - either in Card.module.css or Button */
 .delete-button {

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import styles from "./Button.module.css";
 
 const Button = ({
   type,
@@ -10,13 +10,13 @@ const Button = ({
 }) => {
   if (type === "general")
     return (
-      <button className="general-button" onClick={onClick} text={text}>
+      <button className={styles.generalButton} onClick={onClick} text={text}>
         {text}
       </button>
     );
   if (type === "increment")
     return (
-      <div className="amount-btn">
+      <div className={styles.amountButton}>
         <button onClick={onDecrement}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@ const Button = ({
     );
   if (type === "delete")
     return (
-      <button className="delete-button" onClick={onClick}>
+      <button className={styles.deleteButton} onClick={onClick}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           height="32px"

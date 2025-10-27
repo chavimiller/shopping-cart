@@ -294,6 +294,8 @@ nav svg {
   color: var(--primary-dark);
   font-weight: 700;
   position: relative;
+  display: flex;
+  align-items: center;
   z-index: 1;
 }
 
@@ -304,6 +306,12 @@ nav svg {
   z-index: 10;
   position: absolute;
   transform: rotate(-78deg);
+}
+
+.hero-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .coffee-beans-img-2 {
@@ -320,6 +328,7 @@ nav svg {
   font-size: 20px;
   color: var(--primary-dark);
   padding: 2rem 0;
+  text-align: center;
 }
 
 .featured-container {
@@ -337,8 +346,14 @@ nav svg {
 
 .product-bg {
   background-color: var(--primary-light);
+  width: 250px;
+  height: 500px;
   padding: 3rem 4rem;
   border-radius: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .featured-product {

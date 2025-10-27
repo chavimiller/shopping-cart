@@ -42,14 +42,15 @@ const HomePage = () => {
             <div className="month-featured-title">
               This month's featured blend
             </div>
-
-            {data && data.length > 1 && (
-              <div className="product-bg">
-                <img src={data[1].imageUrl} alt="Coffee Beans"></img>
-                <div>{data[1].name}</div>
-                <div>{data[1].price}</div>
-              </div>
-            )}
+            <div className="product-bg">
+              {data && data.length > 1 && (
+                <>
+                  <img src={data[1].imageUrl} alt="Coffee Beans"></img>
+                  <div>{data[1].name}</div>
+                  <div>{data[1].price}</div>
+                </>
+              )}
+            </div>
           </div>
         </div>
       </div>

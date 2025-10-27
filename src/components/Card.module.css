@@ -1,0 +1,93 @@
+.cartCard {
+  display: flex;
+  justify-content: start;
+  background-color: var(--secondary);
+  height: 12rem;
+  border-radius: 2rem;
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: var(--primary-light);
+  gap: 8rem;
+  align-items: center;
+}
+
+.cartCard img {
+  width: 105px;
+  height: auto;
+  padding: 1rem 4rem;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+}
+
+.productInfoCart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+}
+
+.productNameCart {
+  width: 12rem;
+  height: 4rem; 
+  display: flex;
+  align-items: center;
+}
+
+.productPriceCart {
+  min-width: 110px;
+}
+
+.quantityCart {
+  min-width: 50px;
+}
+
+.checkoutButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+
+.card {
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
+  background-color: var(--secondary);
+  justify-self: center;
+  width: 320px;
+  height: 460px;
+  padding: 1rem;
+  border-radius: 6rem;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat";
+  align-items: center;
+  justify-content: center;
+  gap: .8rem;
+}
+
+.card img {
+  height: 230px;
+  width: auto;
+  padding: 1.5rem;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  text-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+.productName {
+  font-family: "Yanone";
+  color: var(--primary-light);
+  font-weight: 500;
+  font-size: 35px;
+}
+
+.productPrice {
+  color: var(--primary-light);
+  font-size: 22px;
+  font-weight: 400;
+}

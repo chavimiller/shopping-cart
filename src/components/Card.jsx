@@ -1,5 +1,6 @@
 import Button from "./Button";
 import { useCart } from "../hooks/CartContext";
+import styles from "./Card.module.css";
 
 const Card = ({ id, image, name, price, type, quantity }) => {
   const { cart, setCart } = useCart();
@@ -40,16 +41,16 @@ const Card = ({ id, image, name, price, type, quantity }) => {
   if (type === "cartCard")
     return (
       <>
-        <div className="cart-card">
+        <div className={styles.cartCard}>
           <img src={image} alt="Coffee image"></img>
-          <div className="product-info-cart">
-            <div className="product-name-cart">{name}</div>
-            <div className="product-price-cart">
+          <div className={styles.productInfoCart}>
+            <div className={styles.productNameCart}>{name}</div>
+            <div className={styles.productPriceCart}>
               ${Math.round(price * quantity * 100) / 100}
             </div>
-            <div className="quantity-cart">{quantity}</div>
+            <div className={styles.quantityCart}>{quantity}</div>
           </div>
-          <div className="checkout-buttons">
+          <div className={styles.checkoutButtons}>
             <Button
               quantity={quantity}
               type={"increment"}
@@ -64,11 +65,11 @@ const Card = ({ id, image, name, price, type, quantity }) => {
 
   return (
     <>
-      <div className="card">
+      <div className={styles.card}>
         <img src={image} alt="Coffee image"></img>
-        <div className="product-info">
-          <div className="product-name">{name}</div>
-          <div className="product-price">${price}</div>
+        <div className={styles.productInfo}>
+          <div className={styles.productName}>{name}</div>
+          <div className={styles.productPrice}>${price}</div>
         </div>
         <Button type={"general"} onClick={addToCart} text={"Add to cart"} />
       </div>

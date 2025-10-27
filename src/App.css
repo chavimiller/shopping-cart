@@ -179,35 +179,6 @@ nav svg {
   padding: 80px;
 }
 
-.card {
-  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
-  background-color: var(--secondary);
-  justify-self: center;
-  width: 320px;
-  height: 460px;
-  padding: 1rem;
-  border-radius: 6rem;
-  display: flex;
-  flex-direction: column;
-  font-family: "Montserrat";
-  align-items: center;
-  justify-content: center;
-  gap: .8rem;
-}
-
-.cart-card {
-  display: flex;
-  justify-content: start;
-  background-color: var(--secondary);
-  height: 12rem;
-  border-radius: 2rem;
-  font-size: 20px;
-  font-family: "Montserrat";
-  color: var(--primary-light);
-  gap: 8rem;
-  align-items: center;
-}
-
 .total {
   display: flex;
   align-items: center;
@@ -217,65 +188,6 @@ nav svg {
   font-size: 60px;
   color: var(--primary-dark);
   font-weight: 500;
-}
-
-.cart-card img {
-  width: 105px;
-  height: auto;
-  padding: 1rem 4rem;
-  object-fit: contain;
-  display: flex;
-  align-items: center;
-}
-
-.product-info-cart {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 7rem;
-}
-
-.product-name-cart {
-  width: 12rem;
-  height: 4rem; 
-  display: flex;
-  align-items: center;
-}
-
-.product-price-cart {
-  min-width: 110px;
-}
-
-.quantity-cart {
-  min-width: 50px;
-}
-
-.card img {
-  height: 230px;
-  width: auto;
-  padding: 1.5rem;
-}
-
-.product-info {
-  display: flex;
-  flex-direction: column;
-  gap: .8rem;
-  text-wrap: wrap;
-  align-items: center;
-  text-align: center;
-}
-
-.product-name {
-  font-family: "Yanone";
-  color: var(--primary-light);
-  font-weight: 500;
-  font-size: 35px;
-}
-
-.product-price {
-  color: var(--primary-light);
-  font-size: 22px;
-  font-weight: 400;
 }
 
 .hero-section {
@@ -386,6 +298,8 @@ nav svg {
   gap: 4rem;
 }
 
+
+/* check where these go - either in Card.module.css or Button */
 .delete-button {
   background-color: transparent;
   transition: transform .3s ease;
@@ -395,8 +309,5 @@ nav svg {
   transform: scale(1.2);
 }
 
-.checkout-buttons {
-  display: flex;
-  gap: 1rem;
-}
+
 

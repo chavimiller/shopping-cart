@@ -36,3 +36,23 @@ nav svg {
   align-items: center;
   justify-content: center;
 }
+
+
+@media (max-width: 480px) {
+    nav {
+        justify-content: left;
+    }
+
+    nav > div {
+        gap: 1.1rem;
+        padding: 0 1rem;
+    }
+
+    nav svg {
+        right: 1rem;
+    }
+
+    .cartNumber {
+        right: .2rem;
+    }
+}

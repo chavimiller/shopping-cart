@@ -65,10 +65,12 @@ button {
   transform: scale(1.2);
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .amountButton {
-    font-size: 1rem;
+    font-size: 1.2rem;
     height: 2.7rem;
+    min-width: 4rem;
     gap: .2rem;
+    justify-content: space-around;
   }
 }

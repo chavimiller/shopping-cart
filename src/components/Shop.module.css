@@ -11,8 +11,16 @@
 .cardGrid {
   padding: 7rem 0;
   display: grid;
-  justify-content: space-between;
+  justify-content: space-around;
   align-content: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 100px;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  row-gap: 3rem;
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
 }

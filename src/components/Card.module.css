@@ -156,4 +156,26 @@
     align-items: center ;
     justify-content: center;
   }
+
+  .cartCard {
+    flex-direction: column;
+    justify-content: start;
+    width: min(270px, 70%);
+    height: fit-content;
+    padding: 1.5rem;
+  }
+
+  .cartCard img {
+    padding: 1.5rem 0;
+  }
+
+  .productInfoCart {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .productNameCart {
+    font-size: 1.2rem;
+    justify-content: center;
+  }
 }

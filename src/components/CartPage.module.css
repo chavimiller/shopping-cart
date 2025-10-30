@@ -31,4 +31,20 @@
   .total {
     font-size: 3rem;
   }
+
+  .emptyCart {
+    padding: 8rem 4rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .total {
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .emptyCart {
+    padding: 5rem 2rem;
+  }
 }

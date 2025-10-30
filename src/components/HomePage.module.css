@@ -112,7 +112,7 @@
 
   .shopTitle {
     font-size: 8rem;
-    padding: 0;
+    padding: 0 2rem ;
   }
 
   .heroText {
@@ -167,7 +167,7 @@
 
   .monthFeaturedTitle {
     font-size: 6rem;
-    padding: 3rem 0;
+    padding: 3rem 1rem;
   }
 
 }

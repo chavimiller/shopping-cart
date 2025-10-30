@@ -37,8 +37,18 @@ nav svg {
   justify-content: center;
 }
 
+@media (max-width: 768px) {
+  nav svg {
+    right: 1rem;
+  }
 
-@media (max-width: 480px) {
+  .cartNumber {
+    right: .1rem;
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
     nav {
         justify-content: left;
     }

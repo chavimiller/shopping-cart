@@ -108,11 +108,52 @@
   .productPrice {
     font-size: 1.3rem;
   }
+
+  .cartCard {
+    width: 90%;
+    height: 10rem;
+    align-self: center;
+    justify-content: space-between;
+    gap: .5rem;
+    padding: 0 1rem;
+  }
+
+  .cartCard img {
+    width: 80px;
+    padding: 0 .5rem;
+  }
+
+  .productInfoCart {
+    gap: .8rem;
+  }
+
+  .productNameCart {
+    font-size: 1rem;
+    min-width: 90px;
+    height: fit-content;
+
+  }
+
+  .productPriceCart {
+    font-size: 1rem;
+    min-width: 82px;
+  }
+
+  .quantityCart {
+    font-size: 1rem;
+    min-width: 28px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .card {
     width: min(300px, 80%);
     justify-self: center;
+  }
+
+  .checkoutButtons {
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center;
   }
 }

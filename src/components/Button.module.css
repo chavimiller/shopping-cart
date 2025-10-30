@@ -64,3 +64,11 @@ button {
 .deleteButton:hover {
   transform: scale(1.2);
 }
+
+@media (max-width: 760px) {
+  .amountButton {
+    font-size: 1rem;
+    height: 2.7rem;
+    gap: .2rem;
+  }
+}

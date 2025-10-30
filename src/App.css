@@ -52,14 +52,17 @@ a {
   padding: 2rem 0;
 }
 
-
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+}
 
 @media (min-width: 320px) and (max-width: 480px) {
   .container {
     padding: 0;
     max-width: 100%;  
   }
-
   
 }
 

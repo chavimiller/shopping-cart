@@ -48,7 +48,6 @@ const Card = ({ id, image, name, price, type, quantity }) => {
             <div className={styles.productPriceCart}>
               ${Math.round(price * quantity * 100) / 100}
             </div>
-            <div className={styles.quantityCart}>{quantity}</div>
           </div>
           <div className={styles.checkoutButtons}>
             <Button

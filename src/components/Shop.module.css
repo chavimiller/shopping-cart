@@ -11,16 +11,15 @@
 .cardGrid {
   padding: 7rem 0;
   display: grid;
-  justify-content: space-around;
+  justify-content: center;
   align-content: center;
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   row-gap: 3rem;
 }
 
 @media (max-width: 768px) {
-
+  .cardGrid {
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-  
-}

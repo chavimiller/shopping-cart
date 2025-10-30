@@ -47,13 +47,12 @@
   gap: 1rem;
 }
 
-
 .card {
   box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
   background-color: var(--secondary);
   justify-self: center;
-  width: 320px;
-  height: 460px;
+  width: 300px;
+  height: 490px;
   padding: 1rem;
   border-radius: 6rem;
   display: flex;
@@ -94,9 +93,26 @@
 
 
 @media (max-width: 768px) {
+  .card {
+    width: 250px;
+  }
 
+  .card img {
+    height: 200px;
+  }
+
+  .productName {
+    font-size: 2rem;
+  }
+
+  .productPrice {
+    font-size: 1.3rem;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  
+  .card {
+    width: min(300px, 80%);
+    justify-self: center;
+  }
 }

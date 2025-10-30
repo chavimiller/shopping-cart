@@ -54,12 +54,13 @@ nav svg {
     }
 
     nav > div {
-        gap: 1.1rem;
+        gap: 1rem;
+        font-size: 24px;
         padding: 0 1rem;
     }
 
     nav svg {
-        right: 1rem;
+        right: 1.1rem;
     }
 
     .cartNumber {

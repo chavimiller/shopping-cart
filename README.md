@@ -1,3 +1,5 @@
+# shopping-cart
+
 This project is a fully responsive e-commerce web application built with React. 
 It features a multi-page layout with a Home, Shop, and Cart page, managed through React Router. 
 Each product card includes dynamic quantity controls and an Add to Cart button, allowing users to adjust their selections seamlessly. 

@@ -1,0 +1,76 @@
+button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.generalButton {
+  background-color: var(--accent);
+  color: var(--secondary);
+  border: none ;
+  border-radius: .8rem;
+  padding: .8rem .9rem;
+  margin: .8rem;
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 20px;
+  transition: all .2s;
+  box-sizing: border-box;
+}
+
+.generalButton:hover {
+  transform: scale(1.1);
+  background-color: var(--primary-dark);
+  color: var(--accent);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.generalButton:active {
+  transform: scale(1);
+}
+
+.amountButton {
+  width: 7rem;
+  height: 4rem;
+  display: flex;
+  padding: .2rem .3rem;
+  margin: .8rem 0;
+  border-radius: .5rem;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--secondary);
+  background-color: var(--accent);
+} 
+
+.amountButton button {
+  transition: transform .3s ease;
+}
+
+.amountButton button:hover {
+  transform: scale(1.2);
+}
+
+.deleteButton {
+  background-color: transparent;
+  transition: transform .3s ease;
+}
+
+.deleteButton:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .amountButton {
+    font-size: 1.2rem;
+    height: 2.7rem;
+    min-width: 4rem;
+    gap: .2rem;
+    justify-content: space-around;
+  }
+}

@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import { useCart } from "../hooks/CartContext";
+import styles from "./NavBar.module.css";
 
 const NavBar = () => {
   const { cart } = useCart();
@@ -13,7 +14,7 @@ const NavBar = () => {
           <Link to="/cart">Cart</Link>
         </div>
         <Link to="/cart">
-          <div className="cart-number">{cartTotal}</div>
+          <div className={styles.cartNumber}>{cartTotal}</div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="40px"

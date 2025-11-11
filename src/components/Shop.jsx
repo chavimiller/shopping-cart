@@ -1,15 +1,17 @@
 import { useCart } from "../hooks/CartContext";
 import Card from "./Card";
 import useProducts from "../hooks/useProducts";
+import styles from "./Shop.module.css";
 
 const Shop = () => {
   const { data, loading } = useProducts();
   const { cart, setCart } = useCart();
-  if (loading) return <div className="loading">Loading...</div>;
+
+  if (loading) return <div className={styles.loading}>Loading...</div>;
   return (
     <>
       <div className="container">
-        <div className="card-grid">
+        <div className={styles.cardGrid}>
           {data &&
             data.map((product) => (
               <Card
